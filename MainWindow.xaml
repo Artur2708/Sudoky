@@ -1,0 +1,160 @@
+﻿<Window x:Class="Exam.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Exam"
+        mc:Ignorable="d"
+        Title="Судоку" Height="639" Width="946.5" FontSize="33" PreviewKeyDown="Window_PreviewKeyDown" WindowStartupLocation="CenterScreen" Icon="ksudoku_103845.ico" ResizeMode="NoResize" Closed="Window_Closed">
+    <Window.Background>
+        <ImageBrush/>
+    </Window.Background>
+    <StackPanel Orientation="Vertical" Margin="0,0,-6,-2">
+        <StackPanel.Background>
+            <ImageBrush ImageSource="2.jpg"/>
+        </StackPanel.Background>
+        <StackPanel Orientation="Horizontal" Width="Auto" Height="Auto">
+            <Grid x:Name ="grd_Sudoku" Height="543" Width="543" HorizontalAlignment="Left" Margin="15,20,0,10" Background="#CCF5DFA2" IsEnabled="False" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <local:SudokuSquare x:Name="tbx0_0" Grid.Column="0" Grid.Row="0"/>
+                <local:SudokuSquare x:Name="tbx0_1" Grid.Column="1" Grid.Row="0"/>
+                <local:SudokuSquare x:Name="tbx0_2" Grid.Column="2" Grid.Row="0"/>
+                <local:SudokuSquare x:Name="tbx0_3" Grid.Column="3" Grid.Row="0"/>
+                <local:SudokuSquare x:Name="tbx0_4" Grid.Column="4" Grid.Row="0"/>
+                <local:SudokuSquare x:Name="tbx0_5" Grid.Column="5" Grid.Row="0"/>
+                <local:SudokuSquare x:Name="tbx0_6" Grid.Column="6" Grid.Row="0"/>
+                <local:SudokuSquare x:Name="tbx0_7" Grid.Column="7" Grid.Row="0"/>
+                <local:SudokuSquare x:Name="tbx0_8" Grid.Column="8" Grid.Row="0"/>
+
+                <local:SudokuSquare x:Name="tbx1_0" Grid.Column="0" Grid.Row="1"/>
+                <local:SudokuSquare x:Name="tbx1_1" Grid.Column="1" Grid.Row="1"/>
+                <local:SudokuSquare x:Name="tbx1_2" Grid.Column="2" Grid.Row="1"/>
+                <local:SudokuSquare x:Name="tbx1_3" Grid.Column="3" Grid.Row="1"/>
+                <local:SudokuSquare x:Name="tbx1_4" Grid.Column="4" Grid.Row="1"/>
+                <local:SudokuSquare x:Name="tbx1_5" Grid.Column="5" Grid.Row="1"/>
+                <local:SudokuSquare x:Name="tbx1_6" Grid.Column="6" Grid.Row="1"/>
+                <local:SudokuSquare x:Name="tbx1_7" Grid.Column="7" Grid.Row="1"/>
+                <local:SudokuSquare x:Name="tbx1_8" Grid.Column="8" Grid.Row="1"/>
+
+                <local:SudokuSquare x:Name="tbx2_0" Grid.Column="0" Grid.Row="2"/>
+                <local:SudokuSquare x:Name="tbx2_1" Grid.Column="1" Grid.Row="2"/>
+                <local:SudokuSquare x:Name="tbx2_2" Grid.Column="2" Grid.Row="2"/>
+                <local:SudokuSquare x:Name="tbx2_3" Grid.Column="3" Grid.Row="2"/>
+                <local:SudokuSquare x:Name="tbx2_4" Grid.Column="4" Grid.Row="2"/>
+                <local:SudokuSquare x:Name="tbx2_5" Grid.Column="5" Grid.Row="2"/>
+                <local:SudokuSquare x:Name="tbx2_6" Grid.Column="6" Grid.Row="2"/>
+                <local:SudokuSquare x:Name="tbx2_7" Grid.Column="7" Grid.Row="2"/>
+                <local:SudokuSquare x:Name="tbx2_8" Grid.Column="8" Grid.Row="2"/>
+
+                <local:SudokuSquare x:Name="tbx3_0" Grid.Column="0" Grid.Row="3"/>
+                <local:SudokuSquare x:Name="tbx3_1" Grid.Column="1" Grid.Row="3"/>
+                <local:SudokuSquare x:Name="tbx3_2" Grid.Column="2" Grid.Row="3"/>
+                <local:SudokuSquare x:Name="tbx3_3" Grid.Column="3" Grid.Row="3"/>
+                <local:SudokuSquare x:Name="tbx3_4" Grid.Column="4" Grid.Row="3"/>
+                <local:SudokuSquare x:Name="tbx3_5" Grid.Column="5" Grid.Row="3"/>
+                <local:SudokuSquare x:Name="tbx3_6" Grid.Column="6" Grid.Row="3"/>
+                <local:SudokuSquare x:Name="tbx3_7" Grid.Column="7" Grid.Row="3"/>
+                <local:SudokuSquare x:Name="tbx3_8" Grid.Column="8" Grid.Row="3"/>
+
+                <local:SudokuSquare x:Name="tbx4_0" Grid.Column="0" Grid.Row="4"/>
+                <local:SudokuSquare x:Name="tbx4_1" Grid.Column="1" Grid.Row="4"/>
+                <local:SudokuSquare x:Name="tbx4_2" Grid.Column="2" Grid.Row="4"/>
+                <local:SudokuSquare x:Name="tbx4_3" Grid.Column="3" Grid.Row="4"/>
+                <local:SudokuSquare x:Name="tbx4_4" Grid.Column="4" Grid.Row="4"/>
+                <local:SudokuSquare x:Name="tbx4_5" Grid.Column="5" Grid.Row="4"/>
+                <local:SudokuSquare x:Name="tbx4_6" Grid.Column="6" Grid.Row="4"/>
+                <local:SudokuSquare x:Name="tbx4_7" Grid.Column="7" Grid.Row="4"/>
+                <local:SudokuSquare x:Name="tbx4_8" Grid.Column="8" Grid.Row="4"/>
+
+                <local:SudokuSquare x:Name="tbx5_0" Grid.Column="0" Grid.Row="5"/>
+                <local:SudokuSquare x:Name="tbx5_1" Grid.Column="1" Grid.Row="5"/>
+                <local:SudokuSquare x:Name="tbx5_2" Grid.Column="2" Grid.Row="5"/>
+                <local:SudokuSquare x:Name="tbx5_3" Grid.Column="3" Grid.Row="5"/>
+                <local:SudokuSquare x:Name="tbx5_4" Grid.Column="4" Grid.Row="5"/>
+                <local:SudokuSquare x:Name="tbx5_5" Grid.Column="5" Grid.Row="5"/>
+                <local:SudokuSquare x:Name="tbx5_6" Grid.Column="6" Grid.Row="5"/>
+                <local:SudokuSquare x:Name="tbx5_7" Grid.Column="7" Grid.Row="5"/>
+                <local:SudokuSquare x:Name="tbx5_8" Grid.Column="8" Grid.Row="5"/>
+
+                <local:SudokuSquare x:Name="tbx6_0" Grid.Column="0" Grid.Row="6"/>
+                <local:SudokuSquare x:Name="tbx6_1" Grid.Column="1" Grid.Row="6"/>
+                <local:SudokuSquare x:Name="tbx6_2" Grid.Column="2" Grid.Row="6"/>
+                <local:SudokuSquare x:Name="tbx6_3" Grid.Column="3" Grid.Row="6"/>
+                <local:SudokuSquare x:Name="tbx6_4" Grid.Column="4" Grid.Row="6"/>
+                <local:SudokuSquare x:Name="tbx6_5" Grid.Column="5" Grid.Row="6"/>
+                <local:SudokuSquare x:Name="tbx6_6" Grid.Column="6" Grid.Row="6"/>
+                <local:SudokuSquare x:Name="tbx6_7" Grid.Column="7" Grid.Row="6"/>
+                <local:SudokuSquare x:Name="tbx6_8" Grid.Column="8" Grid.Row="6"/>
+
+                <local:SudokuSquare x:Name="tbx7_0" Grid.Column="0" Grid.Row="7"/>
+                <local:SudokuSquare x:Name="tbx7_1" Grid.Column="1" Grid.Row="7"/>
+                <local:SudokuSquare x:Name="tbx7_2" Grid.Column="2" Grid.Row="7"/>
+                <local:SudokuSquare x:Name="tbx7_3" Grid.Column="3" Grid.Row="7"/>
+                <local:SudokuSquare x:Name="tbx7_4" Grid.Column="4" Grid.Row="7"/>
+                <local:SudokuSquare x:Name="tbx7_5" Grid.Column="5" Grid.Row="7"/>
+                <local:SudokuSquare x:Name="tbx7_6" Grid.Column="6" Grid.Row="7"/>
+                <local:SudokuSquare x:Name="tbx7_7" Grid.Column="7" Grid.Row="7"/>
+                <local:SudokuSquare x:Name="tbx7_8" Grid.Column="8" Grid.Row="7"/>
+
+                <local:SudokuSquare x:Name="tbx8_0" Grid.Column="0" Grid.Row="8"/>
+                <local:SudokuSquare x:Name="tbx8_1" Grid.Column="1" Grid.Row="8"/>
+                <local:SudokuSquare x:Name="tbx8_2" Grid.Column="2" Grid.Row="8"/>
+                <local:SudokuSquare x:Name="tbx8_3" Grid.Column="3" Grid.Row="8"/>
+                <local:SudokuSquare x:Name="tbx8_4" Grid.Column="4" Grid.Row="8"/>
+                <local:SudokuSquare x:Name="tbx8_5" Grid.Column="5" Grid.Row="8"/>
+                <local:SudokuSquare x:Name="tbx8_6" Grid.Column="6" Grid.Row="8"/>
+                <local:SudokuSquare x:Name="tbx8_7" Grid.Column="7" Grid.Row="8"/>
+                <local:SudokuSquare x:Name="tbx8_8" Grid.Column="8" Grid.Row="8"/>
+
+                <Border BorderThickness="3" Grid.ColumnSpan="3" Grid.RowSpan="3" Style="{StaticResource Border_Style}"/>
+                <Border BorderThickness="3" Grid.Column="3" Grid.ColumnSpan="3" Grid.RowSpan="3" Style="{StaticResource Border_Style}"/>
+                <Border BorderThickness="3" Grid.Column="6" Grid.ColumnSpan="3" Grid.RowSpan="3" Style="{StaticResource Border_Style}"/>
+
+                <Border BorderThickness="3" Grid.Row="3" Grid.ColumnSpan="3" Grid.RowSpan="3" Style="{StaticResource Border_Style}"/>
+                <Border BorderThickness="3" Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="3" Grid.RowSpan="3"  Style="{StaticResource Border_Style}"/>
+                <Border BorderThickness="3" Grid.Row="3" Grid.Column="6" Grid.ColumnSpan="3" Grid.RowSpan="3" Style="{StaticResource Border_Style}"/>
+
+                <Border BorderThickness="3" Grid.Row="6" Grid.ColumnSpan="3" Grid.RowSpan="3" Style="{StaticResource Border_Style}"/>
+                <Border BorderThickness="3" Grid.Row="6" Grid.Column="3" Grid.ColumnSpan="3" Grid.RowSpan="3" Style="{StaticResource Border_Style}"/>
+                <Border BorderThickness="3" Grid.Row="6" Grid.Column="6" Grid.ColumnSpan="3" Grid.RowSpan="3" Style="{StaticResource Border_Style}"></Border>
+            </Grid>
+            <StackPanel Orientation="Vertical" Background="Transparent" Width="363" Height="512" Margin="10,0,15,-18">
+                <TextBox IsEnabled="False" x:Name="txbAvailableCharacters" TextChanged="txbAvailableCharacters_TextChanged" Text="123456789" Background="{x:Null}" Foreground="{x:Null}" BorderBrush="{x:Null}"  Height="4"></TextBox>
+                <Button x:Name="btnGame"  Click="btnGame_Click" Content="Играть" Height="55" FontSize="24"/>
+                <Button x:Name="btnMusic" Click="btnMusic_Click" Content="Музыка"/>
+                <Button x:Name="btnSolve" Click="btnSolve_Click" Content="Подсказки"/>
+                <Button x:Name="btnDeleteAllNotes" Click="btnDeleteAllNotes_Click" Content="Убрать подсказки"/>
+                <Label x:Name="lb_time_Copy"  Margin="20,30,182,0"  Content="Время" VerticalAlignment="Center" HorizontalAlignment="Center" Background="{x:Null}" BorderBrush="#FFF7E429" Foreground="#FFF9F8F8" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+                <Label x:Name="lb_time"  Margin="184,-60,20,0"  Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Background="{x:Null}" BorderBrush="#FFE4EC4B" Foreground="#FFFFFBFB" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <Button x:Name="btnClear" Click="btnClear_Click" Content="Очистить"/>
+
+            </StackPanel>
+        </StackPanel>
+        <ProgressBar x:Name="progressBar"  Height="20" Margin="10,0,23,0" Maximum="81" Background="#FF0A0A0A" BorderBrush="#FFC9F963" Foreground ="{StaticResource Pro_Bar}" ValueChanged="progressBar_ValueChanged"/>
+
+
+    </StackPanel>
+
+
+</Window>
